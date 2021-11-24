@@ -5,15 +5,14 @@ Os dados do arquivo de entrada definem a lista de processos a ser executada pelo
 
    Exemplo:
    
-       (int)**p**0 (int)**t0**0 (int)**tf**0 (int)**r**0
-       
-       (int)**p**1 (int)**t0**1 (int)**tf**1 (int)**r**1
-       
+   (int)**p**0 (int)**t0**0 (int)**tf**0 (int)**r**0
+              
 # Saída:
 
 O simulador exibe, como saída, o tempo **tf**i em que o processo **p**i tem sua execução finalizada.
 
-Exemplo:
+   Exemplo:
 
-       (int)**p**i (int)**tf**i
- 
+   (int)**p**i (int)**tf**i
+   
+O algoritmo utilizado para simular o escalonador de processos é similar ao *Round Robin*, que utiliza uma lista encadeada circular para ir atualizando o quantum de cada processo.
